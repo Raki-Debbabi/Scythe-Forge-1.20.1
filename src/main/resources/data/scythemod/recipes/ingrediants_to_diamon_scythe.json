@@ -1,0 +1,25 @@
+{
+  "type" :"minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "combat",
+  "pattern": [
+    "SED",
+    "EED",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "scythemod:diamond_scythe",
+    "count": 1
+  }
+}
