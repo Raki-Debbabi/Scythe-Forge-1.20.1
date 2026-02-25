@@ -1,6 +1,8 @@
 package com.scythemod.item;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.scythemod.Scythe;
+import com.scythemod.item.ability.SlashProjectileEntity;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -9,12 +11,12 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 
-public class SlashEntity extends EntityModel {
+public class SlashModel extends EntityModel<SlashProjectileEntity>{
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "slash"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Scythe.MODID, "slash"), "main");
 	private final ModelPart bb_main;
 
-	public SlashEntity(ModelPart root) {
+	public SlashModel(ModelPart root) {
 		this.bb_main = root.getChild("bb_main");
 	}
 
@@ -35,7 +37,7 @@ public class SlashEntity extends EntityModel {
 	}
 
 	@Override
-	public void setupAnim(Entity entity, float v, float v1, float v2, float v3, float v4) {
-
+	public void setupAnim(SlashProjectileEntity entity, float limbSwing, float limbSwingAmount,
+						  float ageInTicks, float netHeadYaw, float headPitch) {
 	}
 }

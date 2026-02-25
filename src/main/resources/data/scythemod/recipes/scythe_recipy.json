@@ -1,0 +1,22 @@
+{
+  "type" :"minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "combat",
+  "pattern": [
+    "SEE",
+    "EEE",
+    "S  "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "scythemod:scythe",
+    "count": 1
+  }
+}
