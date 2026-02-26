@@ -7,13 +7,15 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-public class ScytheItem extends Item {
+public class ScytheItem extends SwordItem {
 
-    public ScytheItem(Properties properties) {
-        super(properties);
+    public ScytheItem(Tier tier, int damage, float speed) {
+        super(tier, damage, speed, new Item.Properties());
     }
 
     @Override

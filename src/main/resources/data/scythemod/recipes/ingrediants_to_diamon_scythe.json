@@ -3,16 +3,13 @@
   "category": "misc",
   "group": "combat",
   "pattern": [
-    "SED",
-    "EED",
+    "SDD",
+    "SDD",
     "S  "
   ],
   "key": {
     "S": {
       "item": "minecraft:stick"
-    },
-    "E": {
-      "item": "minecraft:emerald"
     },
     "D": {
       "item": "minecraft:diamond"

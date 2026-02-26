@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 {
   "type" :"minecraft:crafting_shaped",
   "category": "misc",
   "group": "combat",
   "pattern": [
     "SEE",
-    "EEE",
+    "SEE",
     "S  "
   ],
   "key": {
@@ -17,31 +16,7 @@
     }
   },
   "result": {
-    "item": "scythemod:scythe",
+    "item": "scythemod:diamond_scythe",
     "count": 1
   }
 }
-=======
-{
-  "type" :"minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "combat",
-  "pattern": [
-    "SEE",
-    "EEE",
-    "S  "
-  ],
-  "key": {
-    "S": {
-      "item": "minecraft:stick"
-    },
-    "E": {
-      "item": "minecraft:emerald"
-    }
-  },
-  "result": {
-    "item": "scythemod:scythe",
-    "count": 1
-  }
-}
->>>>>>> 182876705858eee06a96918bca2e8f5cb7ae770b
